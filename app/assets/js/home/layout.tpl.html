@@ -1,0 +1,16 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div data-ng-include="'assets/js/home/header.tpl.html'" class="placeholder-header" data-ng-controller="HeaderCtrl" data-ng-cloak></div>
+  <div data-ng-include="'assets/js/home/navigation.tpl.html'" class="placeholder-left-panel"></div>
+</nav>
+
+<div id="page-wrapper">
+  <div ncy-breadcrumb></div>
+  <div class="span12 ui-view-container">
+  	<div id="content" ui-view="content"></div>
+  </div>
+</div>
+
+<div data-ng-include="'assets/js/home/footer.tpl.html'"></div>
+
+

@@ -1,0 +1,51 @@
+@()
+
+<!DOCTYPE html>
+<html lang="en" id="ng-app" xmlns:ng="http://angularjs.org">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 with AngularJS and RequireJS Seed</title>
+
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("lib/bootstrap/css/bootstrap.css")" />
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("lib/font-awesome/css/font-awesome.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/sb-admin-2.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/plugins/metisMenu/metisMenu.min.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/plugins/timeline.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/plugins/morris.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/animate.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/main.css")">
+
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("favicon.ico")">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+      <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view'); 
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+      </script>
+    <![endif]-->
+
+    <script data-main="@routes.Assets.versioned("js/main.js")" type="text/javascript" src="@routes.Assets.versioned("lib/requirejs/require.js")"></script>
+
+    <base href="/">
+  </head>
+  <body>
+
+    <div ui-view="root"></div>
+
+  </body>
+</html>
