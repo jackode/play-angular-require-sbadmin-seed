@@ -15,7 +15,7 @@ define([
 
     $stateProvider
       .state('app', {
-        abstract: true,
+        //abstract: true,
         views: {
           root: {
             controller: 'HomeCtrl',
@@ -46,10 +46,14 @@ define([
         }
       });
 
-    //$urlRouterProvider.otherwise('/');
+    $urlRouterProvider.when('', function ($injector) {
+      var $state = $injector.get('$state');
+      $state.go('app.dashboard');
+    });
 
     $urlRouterProvider.otherwise(function ($injector, $location) {
       var $state = $injector.get('$state');
+      console.log($location.$$url);
       $state.go('app.notfound', {
         title: "Page not found",
         message: 'Could not find a state associated with url "'+$location.$$url+'"'

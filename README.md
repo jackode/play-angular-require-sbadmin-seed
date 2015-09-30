@@ -1,4 +1,4 @@
-# Example application for Play+AngularJS+RequireJS.
+# Example SB admin2 for Play+AngularJS+RequireJS.
 
 ## Intro
 

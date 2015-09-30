@@ -13,7 +13,7 @@ define([
   'angular-sanitize',
   'angular-animate',
   'angular-breadcrumb'
-], function (angular, couchPotato, $scope) {
+], function (angular, couchPotato) {
   'use strict';
 
   // We must already declare most dependencies here (except for common), or the submodules' routes
@@ -84,7 +84,7 @@ define([
 
   app.config(['$locationProvider', function ($locationProvider) {
     if(window.history && history.pushState) {
-      $locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(false);
     }
   }]);
 
